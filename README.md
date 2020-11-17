@@ -1,8 +1,12 @@
 # rpc-secure message queuing
 
-1. `$make all`
+0. `$git clone git@github.com:mariiatuzovska/rpc-mq.git`
 
-2. `$./consumer/consumer` - listens producer's requests
+1. `$cd rpc-mq`
+
+2. `$make all`
+
+3. `$./consumer/consumer` - listens producer's requests
 
 ```
 Usage of ./consumer/consumer:
@@ -16,7 +20,7 @@ Usage of ./consumer/consumer:
         Not null key for file encryption. Key is a number up to 10000.
 ```
 
-3. `$./producer/producer` produces fibonacci's sequence 
+4. `$./producer/producer` produces fibonacci's sequence 
 
 ```
 Usage of ./producer/producer:
@@ -24,7 +28,7 @@ Usage of ./producer/producer:
         Generation speed number/second (default 10)
 ```
 
-4. `./decrypt/decrypt` decrypts full lines in file
+5. `./decrypt/decrypt` decrypts full lines in file
 
 ```
 Usage of ./decrypt/decrypt:
