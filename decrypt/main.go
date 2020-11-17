@@ -29,8 +29,8 @@ func main() {
 	}
 
 	// validate flags
-	if *logKey < 0 || *logKey > 9999 {
-		log.Fatalf("log_key must be a number more than -1 and less than %d", 10000)
+	if *logKey < 1 || *logKey > 9999 {
+		log.Fatalf("log_key must be a number more than 0 and less than %d", 10000)
 	}
 
 	aesgcm, err := aes.New(*logKey)
